@@ -25,8 +25,10 @@ The following tools will be installed:
 * nmap
 * nikto
 * openfortivpn
+* poshc2
 * proxychains
 * rinetd
+* set
 * sipvicious
 * sslscan
 * sslsplit
@@ -61,16 +63,16 @@ cd Apollodorus;sudo bash install.sh
 ```
 curl:
 ```bash
-sudo sh -c "$(curl -fsSL https://github.com/1tchyB411z/RedTeam/main/Apollodorus/install.sh)"
+sudo sh -c "$(curl -fsSL https://github.com/1tchyBa11z/RedTeam/blob/main/Apollodorus/install.sh)"
 ```
 wget:
 ```bash
-sudo sh -c "$(wget -O- https://github.com/1tchyB411z/RedTeam/main/Apollodorus/install.sh)"
+sudo sh -c "$(wget -O- https://github.com/1tchyBa11z/RedTeam/blob/main/Apollodorus/install.sh)"
 
 ```
 fetch:
 ```bash
-sh -c "$(https://github.com/1tchyB411z/RedTeam/main/Apollodorus/install.sh)"
+sh -c "$(https://github.com/1tchyBa11z/RedTeam/blob/main/Apollodorus/install.sh)"
 ```
 
 ## Usage
