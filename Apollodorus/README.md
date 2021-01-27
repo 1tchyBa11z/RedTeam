@@ -28,7 +28,7 @@ The following tools will be installed:
 * poshc2
 * proxychains
 * rinetd
-* set
+* SET
 * sipvicious
 * sslscan
 * sslsplit
