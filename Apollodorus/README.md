@@ -1,9 +1,8 @@
 # Apollodorus
 
-Apollodorus is a great builder. Running the install.sh  bash script builds and installs commonly used penetration testing tools to a cloud vm running Ubunto 20.something.
+Apollodorus is a great builder. Running the install.sh  bash script builds and installs commonly used penetration testing tools to a cloud vm running Ubuntu server 20.04.1 LTS
 
 The following tools will be installed:
-
 
 * arp-scan
 * byp4xx
@@ -72,7 +71,7 @@ sudo sh -c "$(wget -O- https://github.com/1tchyBa11z/RedTeam/blob/main/Apollodor
 ```
 fetch:
 ```bash
-sh -c "$(https://github.com/1tchyBa11z/RedTeam/blob/main/Apollodorus/install.sh)"
+sudo sh -c "$(https://github.com/1tchyBa11z/RedTeam/blob/main/Apollodorus/install.sh)"
 ```
 
 ## Usage

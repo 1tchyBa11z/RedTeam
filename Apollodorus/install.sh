@@ -160,6 +160,14 @@ cd ..
 #poshc2
 curl -sSL https://raw.githubusercontent.com/nettitude/PoshC2/master/Install.sh | bash
 
+#oh-my-zsh
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+
+#custom-theme
+mkdir -p $ZSH_CUSTOM/themes
+wget https://raw.githubusercontent.com/1tchyBa11z/1tchyBa11z-theme-oh-my-zsh/master/1tchyBa11z.zsh-theme -O $ZSH_CUSTOM/themes/1tchyBa11z.zsh-theme
+sed -i 's/robbyrussell/1tchyBa11z/g' ~/.zshrc
+
 #list of red team usefull CVE's to be used for reference while we build the poc list
 cat > red-team-tools.txt <<EOF
 Prioritized list of CVEs that should be addressed to limit the effectiveness of the Red Team tools. This is a recommended order and customers may make their own priorities based on their unique environments. 
