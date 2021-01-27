@@ -1,6 +1,6 @@
 #!/bin/bash
 echo "Apollodorus - Ubuntu red team pentest tool builder"
-echo "(+) Fill in the name and email variable if you want metasploit-framework to update, (git creds line:91,93)"
+echo "(+) Fill in the name and email variable if you want metasploit-framework to update, (git creds line:93,95)"
 echo "(+) Uncomment last 3 deb-src lines at end of /etc/apt/sources.list"
 read -n1 -s -r -p $'(+) Once complete press Y to continue...\n' key
 
@@ -149,6 +149,16 @@ git clone https://github.com/fox-it/mitm6
 cd mitm6
 python3 setup.py install
 cd ..
+
+#SET
+git clone https://github.com/trustedsec/social-engineer-toolkit/ setoolkit/
+cd setoolkit
+pip3 install -r requirements.txt
+python setup.py
+cd ..
+
+#poshc2
+curl -sSL https://raw.githubusercontent.com/nettitude/PoshC2/master/Install.sh | bash
 
 #list of red team usefull CVE's to be used for reference while we build the poc list
 cat > red-team-tools.txt <<EOF
